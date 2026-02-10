@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script>
+			// Redirect all 404s to index.html for SPA routing
+			var path = location.pathname;
+			var repo = "/AskValentines/";
+			location.replace(
+				repo +
+					"?p=" +
+					encodeURIComponent(path.replace(repo, "")) +
+					location.search +
+					location.hash,
+			);
+		</script>
+	</head>
+	<body></body>
+</html>
