@@ -47,6 +47,7 @@ export const Game = () => {
 	useEffect(() => {
 		if (phase !== "dialogue") setIsTyping(false);
 	}, [phase]);
+	
 	useEffect(() => {
 		const bgm = new Audio(bgmSrc);
 		bgm.loop = true;
